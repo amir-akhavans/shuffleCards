@@ -35,7 +35,7 @@ function App() {
 
     let play = [];
     for (let k = 0; k < 4; k++) {
-      play[k] = ` Player ${k}: ${
+      play[k] = ` Player ${k + 1}: ${
         all[Math.floor(Math.random() * all.length)]
       } - ${all[Math.floor(Math.random() * all.length)]}`;
     }
