@@ -45,8 +45,15 @@ function App() {
   return (
     <div>
       <br />
-      <label style={{ marginBottom: 20, marginTop: 20 }}>
-        Press the button to generate new cards
+      <label
+        style={{
+          marginBottom: 20,
+          marginTop: 20,
+          marginRight: 40,
+          marginLeft: 20,
+        }}
+      >
+        Press This Button to Generate New Cards
       </label>
 
       <button type="submit" onClick={shuffle}>
