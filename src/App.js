@@ -1,6 +1,6 @@
 import React from "react";
+
 function shuffle() {
-  console.clear();
   // Arrays of all elements
   const val1 = ["S", "D", "C", "H"];
   const val2 = [
@@ -33,20 +33,25 @@ function shuffle() {
   // console.log("Number of Cards:", all.length);
   // console.log("All Cards:", all);
 
-  for (let k = 0; k < 4; k++) {
-    console.log(
-      `Player ${k}: ${all[Math.floor(Math.random() * all.length)]} - ${
-        all[Math.floor(Math.random() * all.length)]
-      }`
-    );
-  }
+  // for (let k = 0; k < 4; k++) {
+  //   console.log(
+  //     `Player ${k}: ${all[Math.floor(Math.random() * all.length)]} - ${
+  //       all[Math.floor(Math.random() * all.length)]
+  //     }`
+  //   );
+  // }
   //
   for (let k = 0; k < 4; k++) {
+    // print in console log
     console.log(
       `Player ${k}: ${all[Math.floor(Math.random() * all.length)]} - ${
         all[Math.floor(Math.random() * all.length)]
       }`
     );
+    // print in browser
+    const player = `Player ${k}: ${
+      all[Math.floor(Math.random() * all.length)]
+    } - ${all[Math.floor(Math.random() * all.length)]}`;
   }
   //
 }
@@ -63,7 +68,7 @@ function App() {
         Generate Card
       </button>
       <ul>
-        <li>Player</li>
+        <li>Player:{player}</li>
       </ul>
     </div>
   );
